@@ -7,11 +7,15 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/ui',
     component: () => import('../App.vue'),
-    redirect: '/ui/goapp',
+    redirect: '/ui/index',
     children: [
       {
         path: 'goapp',
         component: () => import('../views/index.vue')
+      },
+      {
+        path: 'index',
+        component: () => import('../views/goapp/index.vue')
       }
     ]
   }

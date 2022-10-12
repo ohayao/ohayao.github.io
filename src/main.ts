@@ -6,6 +6,7 @@ import router from './router/index';
 import goapp, { types } from 'goapp';
 import 'goapp/dist/themes/font/iconfont/iconfont.min.css';
 import 'goapp/dist/themes/default.min.css';
+import 'prismjs/themes/prism-tomorrow.css';
 const app = createApp(App);
 stores.forEach((s) => {
   app.use(s.store, s.key);
