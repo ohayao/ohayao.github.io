@@ -18,6 +18,8 @@ import input from './input.vue';
 import inputHTML from './input.vue?raw';
 import toast from './toast.vue';
 import toastHTML from './toast.vue?raw';
+import select from './select.vue';
+import selectHTML from './select.vue?raw';
 
 import code from '../components/code.vue';
 
@@ -32,7 +34,8 @@ export default defineComponent({
     setup() {
         const components = reactive([
             { com: input, code: inputHTML, is_hide: true },
-            { com: toast, code: toastHTML, is_hide: true }
+            { com: toast, code: toastHTML, is_hide: true },
+            { com: select, code: selectHTML, is_hide: true }
         ]);
         return {
             components,
